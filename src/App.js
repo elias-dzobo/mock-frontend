@@ -51,7 +51,7 @@ const httpLink = createHttpLink({
 
 // Set up the authorization header
 const authLink = setContext((_, { headers }) => {
-  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInVzZXJuYW1lIjpudWxsLCJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiYWRtaW4iLCJ1c2VyIiwiYnJhbmQiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoidXNlciIsIngtaGFzdXJhLXVzZXItaWQiOiI1In0sImlhdCI6MTczNTc0MzE3NSwiZXhwIjoxNzM1NzQzNDc1LCJpc3MiOiJpc3N1ZXIucHJvZmlsYS5jb20ifQ.LW2mxrkKQx0unLlwk_WlS8g_WvouW1A_bXd1tBOhGzU' // Replace with your token retrieval logic
+  const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsInVzZXJuYW1lIjpudWxsLCJodHRwczovL2hhc3VyYS5pby9qd3QvY2xhaW1zIjp7IngtaGFzdXJhLWFsbG93ZWQtcm9sZXMiOlsiYWRtaW4iLCJ1c2VyIiwiYnJhbmQiXSwieC1oYXN1cmEtZGVmYXVsdC1yb2xlIjoidXNlciIsIngtaGFzdXJhLXVzZXItaWQiOiI1In0sImlhdCI6MTczNTc0Mzc1MiwiZXhwIjoxNzM1NzQ0MDUyLCJpc3MiOiJpc3N1ZXIucHJvZmlsYS5jb20ifQ.Zcl_FF1ohU-n70XC5HBaAsczNoNHDzLJB_-YC8afpEk' // Replace with your token retrieval logic
   return {
     headers: {
       ...headers,
